@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D49533721B53BC380074538F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D49533711B53BC380074538F /* main.m */; };
+		D495337F1B53E66C0074538F /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = D495337E1B53E66C0074538F /* Todo.m */; };
+		D49533821B53E7250074538F /* ToDoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49533811B53E7250074538F /* ToDoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		D495336E1B53BC370074538F /* ObjCDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49533711B53BC380074538F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D495337B1B53E1920074538F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D495337D1B53E66C0074538F /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		D495337E1B53E66C0074538F /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		D49533801B53E7250074538F /* ToDoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoManager.h; sourceTree = "<group>"; };
+		D49533811B53E7250074538F /* ToDoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 		D49533651B53BC370074538F = {
 			isa = PBXGroup;
 			children = (
+				D495337B1B53E1920074538F /* AVFoundation.framework */,
 				D49533701B53BC380074538F /* ObjCDemo */,
 				D495336F1B53BC370074538F /* Products */,
 			);
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				D49533711B53BC380074538F /* main.m */,
+				D495337D1B53E66C0074538F /* Todo.h */,
+				D49533801B53E7250074538F /* ToDoManager.h */,
+				D49533811B53E7250074538F /* ToDoManager.m */,
+				D495337E1B53E66C0074538F /* Todo.m */,
 			);
 			path = ObjCDemo;
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D49533721B53BC380074538F /* main.m in Sources */,
+				D49533821B53E7250074538F /* ToDoManager.m in Sources */,
+				D495337F1B53E66C0074538F /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +146,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -144,7 +158,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -174,7 +188,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -187,7 +201,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
